@@ -79,7 +79,7 @@ body {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 20px;
   box-shadow: 0 8px 32px var(--shadow-color);
   padding: 2.5rem;
@@ -189,19 +189,18 @@ body {
 }
 
 .btn-secondary:hover {
-  transform: scale(0.1) rotate(180deg);
-  transition: transform 10s ease-in-out;
+  transform: scale(0.1) rotate(180deg) rotateZ(90deg);
+  transition: transform 1.5s ease;
 }
 
 .scroll-content {
   scroll-behavior: smooth;
-  background: #f8f9fa;
+  background: white;
   border-radius: 15px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
+  padding: 1rem;
   max-height: 300px;
   overflow-y: auto;
-  line-height: 1.6;
+  line-height: 1.5rem;
 }
 .contract-title {
   font-size: 0.8rem;
@@ -210,9 +209,15 @@ body {
   font-weight: 300, bold;
   text-align: justify;
 }
+.contract-description {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: ;
+}
 .termo-contrato {
   padding: 1.5rem;
-  padding-bottom: 0;
+  margin-bottom: 1rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
