@@ -198,8 +198,8 @@ class ContractApp {
         this.createFirework();
       }
     }, 250);
-    document.body.style.background = "black";
-    document.getElementById("confirmationCard").style.background = "black";
+    document.body.style.background = "#060606";
+    document.getElementById("confirmationCard").style.background = "#060606";
     setTimeout(() => {
       this.playVideo();
     }, 1000);
