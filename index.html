@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔒︎ Ambiente Seguro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="title-card">
+      <h1 class="section-title">🔒︎ Ambiente Seguro</h1>
+    </header>
+
+    <main class="card login-card" id="loginCard">
+      <div id="countdown" class="countdown">
+        <span class="countdown-label0">Acesso liberado em:</span>
+        <div class="countdown-item">
+          <span id="days" class="countdown-value">00</span>
+          <span class="countdown-label">Dia</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours" class="countdown-value">00</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes" class="countdown-value">00</span>
+          <span class="countdown-label">Minutos</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds" class="countdown-value">00</span>
+          <span class="countdown-label">Segundos</span>
+        </div>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="login">Usuário:</label>
+          <input
+            class="form-input"
+            type="text"
+            id="login"
+            placeholder="Digite seu login"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Senha:</label>
+          <input
+            class="form-input"
+            type="password"
+            id="password"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+        <p class="error-text" id="errorMessage">Login ou senha incorretos!</p>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+    </main>
+    <main class="card" id="contractCard" style="display: none">
+      <h1 class="section-title">💗Renovação Contratual💗</h1>
+      <p class ="contract-title">
+        Sua fase de experiência chegou ao fim. Para renovar seu
+        contrato, basta ler os termos abaixo e confirmar.
+      </p>
+      <div class="termo-contrato">
+        <h3>Termos do Contrato</h3>
+      </div>
+
+      <div class="scroll-content">
+        <div class="contract-section">
+          <p>
+            Eu, Regilane, firmo este contrato com Matheus, renovando-o por tempo indeterminado, com o compromisso de manter um relacionamento baseado em AMOR, RESPEITO e FÉ EM DEUS.
+          </p>
+        </div>
+
+        <div class="contract-section">
+          <h3>Cláusula I:</h3>
+          <p>
+            Ambos concordam em confiar em Deus como guia em todas as áreas de
+            nossas vidas, buscando sempre Sua direção e sabedoria para enfrentar
+            desafios e tomar decisões.
+          </p>
+        </div>
+
+        <div class="contract-section">
+          <h3>Cláusla II:</h3>
+          <p>
+            Firmamos o compromisso de manter a lealdade e a fidelidade em nossa
+            relação, sendo transparentes, confiantes e sinceros um com o outro
+            em TODOS os momentos.
+          </p>
+        </div>
+
+        <div class="contract-section">
+          <h3>Cláusula III:</h3>
+          <p>
+            Nos comprometemos a NUNCA ir dormir brigados, mesmo que isso
+            signifique resolver tudo às 2 da manhã. Nosso amor será sempre regado
+            com paciência, carinho.
+          </p>
+        </div>
+
+        <div class="contract-section">
+          <h3>Cláusula IV:</h3>
+          <p>
+            Manter o corpo saudável é uma prioridade e incentivar um ao outro é essencial, mesmo nos dias em que seja necessário pular dois exercícios de costas por conta da academia cheia ou furar 30 segundos de prancha (só n pode acertar o parceiro no chute na polia 👀).
+          </p>
+        </div>
+
+        <div class="contract-section">
+          <h3>Cláusula V:</h3>
+          <p>
+            Comprometemo-nos a contemplar o pôr do sol juntos pelo menos uma vez
+            por mês.
+          </p>
+        </div>
+
+        <div class="contract-section">
+          <p>
+            As cláusulas podem ser revisadas/atualizadas mediante demanda.
+          </p>
+        </div>
+
+      <p class="text-center">
+        <strong>Aceita renovar o contrato por tempo indeterminado?</strong>
+      </p>
+      <div class="button-group">
+        <button class="btn btn-primary" id="acceptBtn">Sim</button>
+        <button class="btn btn-secondary" id="rejectBtn">Não</button>
+      </div>
+    </main>
+
+    <main class="card celebration" id="confirmationCard" style="display: none">
+      <h1 class="section-title">🎉 Feliz 3 meses, mozão!!! 🎉</h1>
+      <p class="final-message">Te amo! ❤️</p>
+      <video id="videoPlayer" controls>
+        <source src="media/vid1.mp4" type="video/mp4">
+      </video>
+    </main>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
