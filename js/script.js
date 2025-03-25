@@ -15,7 +15,7 @@ class ContractApp {
       password: "101024",
     };
 
-    this.targetDate = new Date("2025-01-09T00:00:00");
+    this.targetDate = new Date("2025-04-10T00:00:00");
 
     // Initial setup
     this.loginForm.classList.add("login-disabled");
